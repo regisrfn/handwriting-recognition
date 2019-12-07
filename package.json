@@ -12,6 +12,7 @@
   "dependencies": {
     "connect-history-api-fallback": "^1.6.0",
     "core-js": "^3.4.3",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "morgan": "^1.9.1",
     "vue": "^2.6.10",
