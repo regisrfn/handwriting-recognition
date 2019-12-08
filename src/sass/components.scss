@@ -4,8 +4,8 @@
   height: 5.25rem;
   width: auto;
   margin-top: 0.5rem;
-  margin-left: 2rem;;
-  fill:$color-grey-dark-1;
+  margin-left: 2rem;
+  fill: $color-white;
 }
 
 .search {
@@ -13,13 +13,13 @@
   flex: 0 1 40%;
   align-items: center;
   justify-content: center;
-  background-color: $color-grey-light-3;
+  background-color: rgba($color: black, $alpha: 0.1);
   border-radius: 100px;
   transition: all 0.2s;
 
   &:focus-within {
     flex: 0 0 45%;
-    background-color: $color-grey-light-1;
+    background-color: rgba($color: black, $alpha: 0.05);
   }
 
   &__input {
@@ -51,7 +51,7 @@
 
   &__icon {
     height: 100%;
-    fill: $color-grey-dark-3;
+    fill: black;
   }
 }
 
@@ -80,7 +80,7 @@
   &__icon {
     height: 2.5rem;
     width: 2.5rem;
-    fill: $color-grey-dark-2;
+    fill: $color-white;
   }
 
   &__notification {
@@ -89,7 +89,7 @@
     height: 1.75rem;
     width: 1.75rem;
     border-radius: 100px;
-    background-color: $color-primary;
+    background-color: black;
     color: $color-white;
     display: flex;
     justify-content: center;
@@ -102,9 +102,10 @@
     height: 3.75rem;
     width: auto;
     border-radius: 50%;
+    fill:$color-white;
   }
 
-  &__user{
+  &__user {
     margin-left: auto;
     justify-content: space-between;
   }
