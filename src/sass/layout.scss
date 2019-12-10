@@ -4,7 +4,7 @@
   background-color: linear;
   box-shadow: 0 2rem 6rem rgba($color: #000000, $alpha: 0.3);
 
-  @include screen-max('lg'){
+  @include screen-max('laptop-l'){
     margin: 0;
   }
 }

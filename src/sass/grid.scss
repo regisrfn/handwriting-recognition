@@ -1,3 +1,11 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 480px,
+  md: 768px,
+  lg: 1024px,
+  laptop-l:1440px
+);
+
 @mixin screen-max($breakpoint) {
     $value: map-get($grid-breakpoints, $breakpoint);
     @if $value != null {
