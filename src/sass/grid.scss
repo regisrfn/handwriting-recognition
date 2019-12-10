@@ -1,0 +1,6 @@
+@mixin screen-max($breakpoint) {
+    $value: map-get($grid-breakpoints, $breakpoint);
+    @if $value != null {
+        @media (max-width: $value) { @content; }
+    }
+  }

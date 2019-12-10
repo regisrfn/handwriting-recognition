@@ -22,3 +22,10 @@ $color-grey-dark-2: #777;
 $color-grey-dark-3: #999;
 $color-blue:#22c1c3;
 $header-height: 10rem;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 480px,
+  md: 768px,
+  lg: 1024px
+);

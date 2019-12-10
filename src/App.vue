@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="container">
     <app-header></app-header>
     <div class="content">
       <app-sidebar></app-sidebar>
@@ -10,7 +10,7 @@
 
 <script>
 import header from "@/components/Header";
-import sidebar from "./components/sidebar";
+import sidebar from "@/components/sidebar";
 
 export default {
   components: {
