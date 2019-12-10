@@ -1,7 +1,7 @@
 .container {
-  max-width: 120rem;
+  max-width: 160rem;
   margin: 8rem auto;
-  background-color: $color-grey-light-1;
+  background-color: linear;
   box-shadow: 0 2rem 6rem rgba($color: #000000, $alpha: 0.3);
 }
 
@@ -22,6 +22,11 @@
 
 .content {
   display: flex;
+  background: linear-gradient(
+    to bottom left,
+    $color-mint 0%,
+    $color-primary 100%
+  );
 }
 
 .sidebar {
