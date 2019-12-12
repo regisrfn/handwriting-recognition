@@ -5,7 +5,7 @@
   width: auto;
   margin-top: 0.5rem;
   margin-left: 2rem;
-  fill: $color-white;
+  fill: $color-primary-dark-2;
 }
 
 .search {
@@ -13,13 +13,13 @@
   flex: 0 1 40%;
   align-items: center;
   justify-content: center;
-  background-color: rgba($color: $color-white, $alpha: 0.7);
+  background-color: rgba($color: $color-primary, $alpha: 0.1);
   border-radius: 100px;
   transition: all 0.2s;
 
   &:focus-within {
     flex: 0 0 45%;
-    background-color: rgba($color: $color-white, $alpha: 0.5);
+    background-color: rgba($color: $color-primary, $alpha: 0.3);
   }
 
   &__input {
@@ -80,7 +80,7 @@
   &__icon {
     height: 2.5rem;
     width: 2.5rem;
-    fill: $color-white;
+    fill: $color-mint;
   }
 
   &__notification {
@@ -102,7 +102,7 @@
     height: 3.75rem;
     width: auto;
     border-radius: 50%;
-    fill: $color-white;
+    fill: $color-mint;
   }
 
   &__user {
@@ -136,6 +136,13 @@
     .router-link-active {
       background-color: $color-primary-light;
       transition: background-color 1s;
+      color: white !important;
+
+      .side-nav__icon {
+        svg {
+          fill: white;
+        }
+      }
     }
   }
 
@@ -159,8 +166,8 @@
   &__link:link,
   &__link:visited {
     display: flex;
-    justify-content:space-between;
-    color: $color-grey-light-1;
+    justify-content: space-between;
+    color: black;
     text-decoration: none;
     padding: 1.5rem 3rem;
     align-items: center;
@@ -168,6 +175,7 @@
     position: relative;
     z-index: 1;
   }
+
   &__icon {
     svg {
       width: 3rem;

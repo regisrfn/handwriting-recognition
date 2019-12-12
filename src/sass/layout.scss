@@ -4,20 +4,24 @@
   margin: 8rem auto;
   background-color: linear;
   box-shadow: 0 2rem 6rem rgba($color: #000000, $alpha: 0.3);
-  @include screen-max('laptop-l'){
+  @include screen-max("laptop-l") {
     margin: 0;
   }
 }
 
 .header {
   font-size: 1.4rem;
-  height: 6rem;;
+  height: 6rem;
   background-color: $color-grey-light-1;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom-style: solid;
-  border-bottom-color: rgba($color:$color-mint, $alpha: 0.3);
+  border-bottom-color: rgba($color: $color-mint, $alpha: 0.3);
+
+  &__link svg {
+    outline: none;
+  }
 }
 
 .content {
@@ -38,7 +42,6 @@
   flex: 1;
 }
 
-.home{
-  margin:auto;
+.home {
+  margin: auto;
 }
-

@@ -1,6 +1,9 @@
 <template>
   <div class="header">
-    <img svg-inline src="@/img/contract.svg" alt="trillo logo" class="logo">
+    <router-link to="home" class="header__link">
+      <img svg-inline src="@/img/contract.svg" alt="trillo logo" class="logo">
+    </router-link>
+    
 
     <form action="#" class="search">
       <input type="text" class="search__input" placeholder="Search">
