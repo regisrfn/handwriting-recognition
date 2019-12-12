@@ -122,6 +122,8 @@
   font-size: 1.4rem;
   list-style: none;
   margin-top: 3.5rem;
+  display: flex;
+  flex-direction: column;
 
   &__item {
     position: relative;
@@ -181,6 +183,7 @@
   text-align: center;
   padding: 2.5rem;
   color: $color-grey-light-4;
+  align-self: flex-end;
 }
 
 .active {

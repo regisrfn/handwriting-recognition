@@ -23,4 +23,5 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh;
   color: var(--color-grey-dark-2);
+  background: linear-gradient(to bottom left, $color-mint 0%, $color-primary 100%);
 }
