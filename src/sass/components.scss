@@ -13,13 +13,13 @@
   flex: 0 1 40%;
   align-items: center;
   justify-content: center;
-  background-color: rgba($color: $color-primary, $alpha: 0.1);
+  background-color: rgba($color: $color-grey-light-4, $alpha: 0.3);
   border-radius: 100px;
   transition: all 0.2s;
 
   &:focus-within {
     flex: 0 0 45%;
-    background-color: rgba($color: $color-primary, $alpha: 0.3);
+    background-color: rgba($color: $color-grey-light-4, $alpha: 0.1);
   }
 
   &__input {
@@ -119,17 +119,32 @@
 // SIDEBAR ////////////////////////////////////
 
 .side-nav {
+  @include screen-max("sm") {
+    font-size: 1rem;
+    flex-direction: row;
+    margin: 0;
+  }
+
   font-size: 1.4rem;
   list-style: none;
   margin-top: 3.5rem;
   display: flex;
   flex-direction: column;
 
+  
   &__item {
     position: relative;
 
     &:not(:last-child) {
       margin-bottom: 1rem;
+
+      @include screen-max("sm") {
+        margin: 0;
+      }
+    }
+
+    @include screen-max("sm") {
+      flex: 1;
     }
 
     // class from vuejs
@@ -167,7 +182,7 @@
   &__link:visited {
     display: flex;
     justify-content: space-between;
-    color: black;
+    color: white;
     text-decoration: none;
     padding: 1.5rem 3rem;
     align-items: center;
@@ -178,15 +193,23 @@
 
   &__icon {
     svg {
+      @include screen-max("sm") {
+        width: 2rem;
+        height: 2rem;
+      }
+    
       width: 3rem;
       height: 3rem;
       margin-left: 1rem;
-      fill: black;
+      fill: white;
     }
   }
 }
 
 .legal {
+  @include screen-max("sm") {
+    display: none;
+  }
   font-size: 1.2rem;
   text-align: center;
   padding: 2.5rem;
