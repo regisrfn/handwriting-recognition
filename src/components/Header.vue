@@ -6,7 +6,7 @@
     
 
     <form action="#" class="search">
-      <input type="text" class="search__input" placeholder="Search">
+      <input type="text" class="search__input" placeholder="What are you looking for?">
       <button class="search__button">
         <img  svg-inline src="@/img/SVG/magnifying-glass.svg" alt="" class="search__icon"/>
       </button>

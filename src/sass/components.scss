@@ -5,10 +5,11 @@
   width: auto;
   margin-top: 0.5rem;
   margin-left: 2rem;
-  fill: $color-primary-dark-2;
+  fill: $color-white;
 }
 
 .search {
+  color:$color-white;
   display: flex;
   flex: 0 1 40%;
   align-items: center;
@@ -23,6 +24,7 @@
   }
 
   &__input {
+    text-align: center;
     font-family: inherit;
     font-size: inherit;
     color: inherit;
@@ -31,6 +33,12 @@
     padding: 0.7rem 2rem;
     outline: none;
     flex: 1;
+
+    &::placeholder {
+      color:whitesmoke !important;
+      font-size: 1.2em;
+      font-style: italic;
+    }
 
     &::-webkit-input-placeholder {
       font-weight: 100;
@@ -80,7 +88,7 @@
   &__icon {
     height: 2.5rem;
     width: 2.5rem;
-    fill: $color-mint;
+    fill: $color-white;
   }
 
   &__notification {
@@ -89,7 +97,7 @@
     height: 1.75rem;
     width: 1.75rem;
     border-radius: 100px;
-    background-color: black;
+    background-color: rgb(230, 62, 62);
     color: $color-white;
     display: flex;
     justify-content: center;
@@ -102,7 +110,7 @@
     height: 3.75rem;
     width: auto;
     border-radius: 50%;
-    fill: $color-mint;
+    fill: white;
   }
 
   &__user {
@@ -131,7 +139,6 @@
   display: flex;
   flex-direction: column;
 
-  
   &__item {
     position: relative;
 
@@ -197,7 +204,7 @@
         width: 2rem;
         height: 2rem;
       }
-    
+
       width: 3rem;
       height: 3rem;
       margin-left: 1rem;
