@@ -9,6 +9,8 @@
   margin: 2rem auto;
   background-image: linear-gradient(to bottom left, $color-mint 0%, $color-primary 100%);
   border-radius: 10px;
+  box-shadow: 10px 10px 34px -5px rgba(0,0,0,0.75);
+  max-height: 80vh;
 
   &__logo {
     align-self: center;
