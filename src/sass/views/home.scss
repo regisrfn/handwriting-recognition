@@ -1,6 +1,10 @@
-.home {
+.image_box {
     font-size: 1.4rem;
     display: flex;
     padding: 1.5rem;
     background-color: $color-grey-light-1;
+    flex-direction: column;
+    align-self: center;
+    margin:auto;
+    margin-top: 2rem;
 }
