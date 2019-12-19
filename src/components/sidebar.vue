@@ -5,7 +5,7 @@
         <router-link
           :to="item.name.toLowerCase()"
           class="side-nav__link"
-          @click="changeBackground()"
+          @click="rotateHome()"
         >
           <span>{{item.span}}</span>
           <div class="side-nav__icon" v-html="item.icon"></div>
@@ -35,8 +35,8 @@ export default {
     };
   },
   methods: {
-    changeBackground(){
-
+    rotateHome(){
+      this.$store.commit('SET_CLASS',true)
     }
   }
 };
