@@ -19,7 +19,7 @@ $box-width: 100px;
   background-image: linear-gradient(to bottom left, $color-mint 0%, $color-primary 100%);
   border-radius: 10px;
   box-shadow: 10px 10px 34px -5px rgba(0, 0, 0, 0.75);
-  max-height: 80vh;
+  height: 100%;
 
   &__logo {
     align-self: center;
@@ -42,6 +42,10 @@ $box-width: 100px;
   border-radius: 50%;
   background-color: $color-white;
   margin-bottom: 3rem;
+
+  svg {
+    fill: $color-primary-dark-4;
+  }
 }
 
 .upload-btn-wrapper {
