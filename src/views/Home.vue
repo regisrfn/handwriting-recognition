@@ -17,11 +17,6 @@
 
 <script>
 export default {
-  data() {
-    return {
-      isActive: this.$store.state.rotateClass
-    };
-  },
   computed: {
     isActiveClass : function () {
       return this.$store.state.rotateClass
@@ -31,6 +26,9 @@ export default {
     setTimeout( () => {
       return this.$store.commit('SET_CLASS',true)
     }, 100)
+  },
+  beforeDestroy () {
+    this.$store.commit('SET_CLASS',false)
   }
 };
 </script>
