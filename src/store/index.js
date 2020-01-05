@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import imageUpload from '../store/image_store'
 
 Vue.use(Vuex)
 
@@ -15,5 +16,6 @@ export default new Vuex.Store({
   actions: {
   },
   modules: {
+    imageUpload
   }
 })

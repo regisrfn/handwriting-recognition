@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import image_services from "@/services/image_upload/image_services";
+import * as types from '@/store/types'
 
 export default {
   computed: {
@@ -41,15 +41,7 @@ export default {
       console.log(file);
     },
     onUpload() {
-      image_services
-        .getAllImages()
-        .then(response => {
-          const status = response.data;
-          console.log(status);
-        })
-        .catch(error => {
-          console.log(error);
-        });
+      this.$store.dispatch(types.UPLOAD_IMAGE)
     }
   }
 };
