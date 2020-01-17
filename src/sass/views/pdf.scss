@@ -1,0 +1,28 @@
+.pdfForm {
+  position: relative;
+  flex: 1 1;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./img/pdf.png');
+    background-size: 256px;
+    filter: opacity(20%);
+  }
+
+  &__box {
+      position: relative;
+      min-height: 400px;
+      min-width: 400px;
+      background-color: $color-white;
+      box-shadow: 0px 0px 10px #cccccc;
+  }
+}
