@@ -30,7 +30,7 @@
   font-size: 2rem; //1rem = 10px;
   min-height: 90vh;
 
-  @include screen-max("sm") {
+  @include screen-max("md") {
     margin: 0;
     flex-direction: column;
   }
@@ -46,12 +46,4 @@
 .hotel-view {
   background-color: $color-white;
   flex: 1;
-}
-
-.home {
-  margin: auto;
-}
-
-.rotate {
-  transform: rotateY(360deg);
 }

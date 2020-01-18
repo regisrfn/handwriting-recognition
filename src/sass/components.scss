@@ -127,7 +127,7 @@
 // SIDEBAR ////////////////////////////////////
 
 .side-nav {
-  @include screen-max("sm") {
+  @include screen-max("md") {
     font-size: 1rem;
     flex-direction: row;
     margin: 0;
@@ -145,12 +145,12 @@
     &:not(:last-child) {
       margin-bottom: 1rem;
 
-      @include screen-max("sm") {
+      @include screen-max("md") {
         margin: 0;
       }
     }
 
-    @include screen-max("sm") {
+    @include screen-max("md") {
       flex: 1;
     }
 
@@ -214,7 +214,7 @@
 }
 
 .legal {
-  @include screen-max("sm") {
+  @include screen-max("md") {
     display: none;
   }
   font-size: 1.2rem;
