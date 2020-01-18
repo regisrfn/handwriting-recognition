@@ -14,6 +14,17 @@ export default {
         async [types.UPLOAD_FILE]() {
             const response = await image_service.getAllImages()
             console.log(response.data)
+        },
+        [types.TEXT_EXTRACT](_,file) {
+            return new Promise((resolve, reject) => {
+                image_service.textract(file)
+                    .then(response => {
+                        resolve(response)
+                    })
+                    .catch(error => {
+                        reject(error)
+                    })
+            })
         }
     }
 }
