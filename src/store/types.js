@@ -1,6 +1,6 @@
 // getters
-export const IMAGE = 'IMAGE'
+export const FILE = 'FILE'
 // mutations
-export const SET_IMAGE = 'SET_IMAGE'
+export const SET_FILE = 'SET_FILE'
 // actions
-export const UPLOAD_IMAGE = 'UPLOAD_IMAGE'
+export const UPLOAD_FILE = 'UPLOAD_FILE'

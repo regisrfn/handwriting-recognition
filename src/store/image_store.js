@@ -3,15 +3,15 @@ import image_service from '../services/image_upload/image_services'
 
 export default {
     state: {
-        image: null,
+        file: null,
     },
     mutations: {
-        [types.SET_IMAGE](state, image) {
-            state.image = image
+        [types.SET_FILE](state, file) {
+            state.file = file
         }
     },
     actions: {
-        async [types.UPLOAD_IMAGE]() {
+        async [types.UPLOAD_FILE]() {
             const response = await image_service.getAllImages()
             console.log(response.data)
         }
