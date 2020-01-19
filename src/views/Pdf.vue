@@ -26,12 +26,12 @@ export default {
   },
   methods: {
     forceFileDownload(response) {
-      const url = window.URL.createObjectURL(new Blob([response.data]));
-      const link = document.createElement("a");
-      link.href = url;
-      link.setAttribute("download", "file.zip"); //or any other extension
-      document.body.appendChild(link);
-      link.click();
+      const url = window.URL.createObjectURL(new Blob([response.data]))
+      const link = document.createElement("a")
+      link.href = url
+      link.setAttribute("download", "file.zip") //or any other extension
+      document.body.appendChild(link)
+      link.click()
     },
     chooseFile() {
       this.$refs.file__input.click();
@@ -46,7 +46,7 @@ export default {
       this.$store.dispatch(types.TEXT_EXTRACT, formData)
         .then(response => {
           this.forceFileDownload(response)  
-          console.log(response)})
+          console.log(response.data)})
         .catch(error => console.log("Eita deu ruim", error));
     }
   }

@@ -5,7 +5,7 @@ export default {
         return Api().get('/')
     },
     textract (file) {
-        return Api().post('/aws/textract', file)
+        return Api().post('/aws/textract', file, {responseType: 'blob'})
     },
 }
 
