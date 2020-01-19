@@ -44,10 +44,7 @@ export default {
       var formData = new FormData();
       formData.append("image", this.selectedFile);
       this.$store.dispatch(types.TEXT_EXTRACT, formData)
-        .then(response => {
-          this.forceFileDownload(response)  
-          console.log(response.data)})
-        .catch(error => console.log("Eita deu ruim", error));
+        .then(response => this.forceFileDownload(response))
     }
   }
 };
