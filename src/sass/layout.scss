@@ -7,13 +7,14 @@
   margin: 8rem auto;
   background-color: linear;
   box-shadow: 0 2rem 6rem rgba($color: #000000, $alpha: 0.3);
-  
 }
 
 .header {
-  font-size: 1.4rem;
-  height: 6rem;
-  background-color:$color-grey-dark-2;
+  @include screen-max("sm-l") {
+    flex-wrap: wrap;
+  }
+  font-size: 1.25rem;
+  background-color: $color-grey-dark-2;
   display: flex;
   justify-content: space-between;
   align-items: center;

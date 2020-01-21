@@ -9,9 +9,13 @@
 }
 
 .search {
-  color:$color-white;
+  @include screen-max("sm-l") {
+    order: 1;
+    flex: 0 0 100%;
+  }
+  color: $color-white;
   display: flex;
-  flex: 0 1 40%;
+  flex: 0 0 40%;
   align-items: center;
   justify-content: center;
   background-color: rgba($color: $color-grey-light-4, $alpha: 0.3);
@@ -35,7 +39,7 @@
     flex: 1;
 
     &::placeholder {
-      color:whitesmoke !important;
+      color: whitesmoke !important;
       font-size: 1.2em;
       font-style: italic;
     }
